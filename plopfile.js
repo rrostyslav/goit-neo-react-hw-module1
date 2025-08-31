@@ -27,8 +27,8 @@ export default function (plop) {
       },
       {
         type: 'add',
-        path: 'src/components/{{name}}/index.jsx',
-        templateFile: 'plop-templates/index.jsx.hbs',
+        path: 'src/components/{{name}}/index.js',
+        templateFile: 'plop-templates/index.js.hbs',
       },
     ],
   });
