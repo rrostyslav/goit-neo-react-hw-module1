@@ -1,5 +1,4 @@
 import css from './FriendsListItem.module.css';
-import clsx from 'clsx'
 
 export default function FriendsListItem({ avatar, name, isOnline }) {
   return (
