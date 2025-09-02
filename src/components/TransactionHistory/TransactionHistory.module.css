@@ -1,37 +1,37 @@
 .transactionTable {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .transactionTable thead th {
-    background-color: #333;
-    color: white;
-    padding: 12px 16px;
-    text-align: left;
-    font-weight: bold;
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  background-color: #333;
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .transactionTable tbody tr {
-    border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .transactionTable tbody tr:nth-child(even) {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 .transactionTable tbody tr:nth-child(odd) {
-    background-color: white;
+  background-color: white;
 }
 
 .transactionTable tbody td {
-    padding: 12px 16px;
-    font-size: 14px;
-    color: #333;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
 }
 
 .transactionTable tbody tr:hover {
-    background-color: #e8e8e8;
+  background-color: #e8e8e8;
 }
