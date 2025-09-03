@@ -1,9 +1,7 @@
 import css from './TransactionHistory.module.css';
 
-function capitalizeFirst(value) {
-  if (!value) return '';
-  return value.charAt(0).toUpperCase() + value.slice(1);
-}
+const capitalizeFirst = (value) =>
+  value ? `${value.charAt(0).toUpperCase()}${value.slice(1)}` : '';
 
 export default function TransactionHistory({ transactions }) {
   return (
@@ -17,8 +15,9 @@ export default function TransactionHistory({ transactions }) {
       </thead>
 
       <tbody>
-        {transactions.map((transaction) => (
-          <tr>
+        {transactions.map((transaction, index) => (
+          // note: use something more unique than index when data is not static
+          <tr key={index}>
             <td>{capitalizeFirst(transaction.type)}</td>
             <td>{transaction.amount}</td>
             <td>{transaction.currency}</td>
